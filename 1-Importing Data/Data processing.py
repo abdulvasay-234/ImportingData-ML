@@ -4,6 +4,7 @@ import pandas as pd
 data_set= pd.read_csv('Dataset.csv')
 x= data_set.iloc[:,:-1].values 
 y= data_set.iloc[:,3].values
+
 #Handling missing data (Replacing missing data with the mean value) 
 from sklearn.impute import SimpleImputer
 imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
