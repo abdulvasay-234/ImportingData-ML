@@ -13,7 +13,7 @@ format that cannot be directly used for machine learning models.
 machine learning model which also increases the accuracy and efficiency of a machine 
 learning model.
 <details>
-  <summary>Steps involved in Data pre-processing:</summary>
+  <summary><h2>Steps involved in Data pre-processing:</h2></summary>
   
 - Getting the dataset. 
 - Importing libraries. 
