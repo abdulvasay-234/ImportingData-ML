@@ -11,6 +11,7 @@ imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
 imputer.fit(x[:, 1:3])
 x[:, 1:3] = imputer.transform(x[:, 1:3])
 print(x)
+
 # Encoding categorical data
 # Encoding the Independent Variable
 from sklearn.compose import ColumnTransformer
@@ -20,11 +21,13 @@ remainder='passthrough')
 x = np.array(ct.fit_transform(x))
 print(x)
 print('\n')
+
 # Encoding the Dependent Variable
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 y = le.fit_transform(y)
 print(y)
+
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split 
 x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.2, random_state=1) 
